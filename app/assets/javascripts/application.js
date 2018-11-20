@@ -21,10 +21,22 @@
 
 
 $(document).ready(function() {
-  $("p").click(function() {
-    $(this).hide();
-  });
-  $(".cate").click(function() {
-    $(".card:gt(0)").toggle();
-  });
-});
+  
+  $('.category-todo').hide();
+  $('.tab-link:first').addClass('active');
+  $(".category-todo:first").fadeIn();
+  
+  $('.tab-link').on('click',function(e) {
+    e.preventDefault();
+    $('.active').removeClass('active');
+    $('.category-todo').hide();
+    $(this).addClass('active');
+    $("#category-todo-"+e.target.id).fadeIn();
+  })
+
+  $('.avatar').hide();
+  $('.rounded-circle').on('click',function() {
+    $('.avatar').toggle();
+  })
+
+})

@@ -1,10 +1,17 @@
 <h1 class="text-center mb-4">Welcome to my todolist app</h1>
+
+<p>helllo</p>
 <%= render 'layouts/task_form'  %>
-<div class="container">
-  <ul>
-  <% @categories.each do  |category|%>
-  <li><%= category.title  %></li>
-  <div class="card">
+
+
+<div class="container" id='tabs'>
+  <ul class="nav nav-tabs">
+  <% @categories.each_with_index do  |category, i|%>
+      <li class="nav-item" ><a class="nav-link tab-link" href='#' id=<%= category.title %> ><%= category.title  %></a></li>
+    <% end %>
+  </ul>
+  <% @categories.each_with_index do  |category, i|%>
+  <div class="card category-todo" id=<%= "category-todo-#{category.title}" %> >
     <ul>
       <% category.tasks.each do |task|  %>
       <li>
@@ -17,9 +24,9 @@
     </ul>
   </div>
   <% end %>
-  </ul>
 </div>
 
+<h2>c'est de la merde</h2>
 <div class="container">
   <div class="row">
     <% @tasks.each do |task|  %>
@@ -31,3 +38,4 @@
     <% end %>
   </div>
 </div>
+
