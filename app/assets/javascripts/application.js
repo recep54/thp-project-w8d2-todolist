@@ -19,13 +19,12 @@
 //= require popper
 //= require bootstrap-sprockets
 
-
 $(document).ready(function() {
-  
+  // Tabs
   $('.category-todo').hide();
   $('.tab-link:first').addClass('active');
   $(".category-todo:first").fadeIn();
-  
+
   $('.tab-link').on('click',function(e) {
     e.preventDefault();
     $('.active').removeClass('active');
@@ -34,9 +33,22 @@ $(document).ready(function() {
     $("#category-todo-"+e.target.id).fadeIn();
   })
 
+  // Dropdown
   $('.avatar').hide();
   $('.rounded-circle').on('click',function() {
     $('.avatar').toggle();
   })
 
+  // Carousel
+  $('.rounded-circle-0').hide();
+
+  $('.left').on('click',function(e) {
+    e.preventDefault();
+    $('.rounded-circle-0').hide();
+  })
+
+  $('.right').on('click',function(e) {
+    e.preventDefault();
+    $('.rounded-circle-0').fadeIn();
+  })
 })
