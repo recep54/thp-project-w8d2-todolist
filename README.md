@@ -17,6 +17,9 @@ Sliders permettant de defiler les images une par une.
 
 # Front
 
+-Navbar responsive
+-Dropdown
+
 # Lien
 
 https://todolist-kebabier.herokuapp.com/
