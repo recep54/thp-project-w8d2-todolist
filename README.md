@@ -1,24 +1,32 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# PROJET TO DO LIST
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+# Differente etapes
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+# Tabulation:
 
-* How to run the test suite
+Elle permet de naviger entre 3 liste de 3 items sans chargement de pages
 
-* Services (job queues, cache servers, search engines, etc.)
+# Carrousel
 
-* Deployment instructions
+Sliders permettant de defiler les images une par une.
 
-* ...
+# Front
+
+# Lien
+
+https://todolist-kebabier.herokuapp.com/
+
+# Equipe 
+
+- RATTANASAMAY Victor
+- KARABULUT Recep
+- BOURGOUIN Evan
+- UNAL Enes
+- YAKATALY Shayane
+
+
