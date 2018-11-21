@@ -13,26 +13,3 @@
 //= require jquery3
 //= require turbolinks
 //= require_tree .
-
-
-
-$(document).ready(function() {
-  
-  $('.category-todo').hide();
-  $('.tab-link:first').addClass('active');
-  $(".category-todo:first").fadeIn();
-  
-  $('.tab-link').on('click',function(e) {
-    e.preventDefault();
-    $('.active').removeClass('active');
-    $('.category-todo').hide();
-    $(this).addClass('active');
-    $("#category-todo-"+e.target.id).fadeIn();
-  })
-
-  $('.avatar').hide();
-  $('.rounded-circle').on('click',function() {
-    $('.avatar').toggle();
-  })
-
-})

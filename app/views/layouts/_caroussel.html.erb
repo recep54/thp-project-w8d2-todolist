@@ -1,9 +1,0 @@
-<div id="caroussel" >
-  <ul class="carousel__list">
-    <% @tasks.each do |task|  %>
-        <% unless task.image.nil? %>
-          <li><img src=<%=task.image %>/></li>
-        <% end %>
-    <% end %>
-  </ul>
-</div>
